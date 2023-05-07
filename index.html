@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fontawesome.com/icons/code?f=classic&s=solid"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Josefin+Sans:wght@700&family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .ab {
+        /* background-image:url(https://wallpaperaccess.com/full/5651980.jpg) ; */
+        background-image: url("./IMG3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+      }
+      H1 {
+        text-decoration: double;
+        text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 50px;
+        text-shadow: 50px;
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      span {
+        text-decoration: double;
+        text-transform: uppercase;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 50px;
+        text-shadow: 50px;
+        color:red;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 6%;
+        padding-top: 25px;
+      }
+      nav ul li {
+        display: inline-block;
+        padding: 25px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 25px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        color: rgba(247, 12, 12, 0.799);
+        font-size: 30px;
+        transition: 0.5s;
+      }
+      .content {
+        padding-top: 50px;
+        padding-left: 40px;
+      }
+      .content h4 {
+        color: rgb(236 238 15 / 91%);
+        font-size: 30px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .content span {
+        color: rgba(94, 228, 188, 0.838);
+        font-size: 70px;
+        font-family: cursive;
+      }
+      .content span:hover {
+        color: rgb(254, 250, 250);
+        font-size: 70px;
+        font-family: cursive;
+      }
+      .content h3 {
+        color: rgb(236 238 15 / 91%);
+        font-size: 25px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .about {
+        background-color: rgb(21, 21, 21);
+        height: 120vh;
+        width: 100%;
+        padding-top: 100px;
+      }
+      .about img {
+        height: 81vh;
+        width: 36%;
+        padding-left: 0px;
+        padding-top: 50px;
+        border-radius: 100%;
+      }
+      .jpg{
+        height:400px;
+         width:300px;
+        position: absolute;
+        right: 150px;
+        top : 220px;
+        border-radius: 40%;
+      }
+      .at h3 {
+        color: aliceblue;
+        font-size: 50px;
+      }
+      .at p {
+        color: rgb(244, 27, 27);
+        width: 550px;
+        font-size: 25px;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      /* .at button{
+                background-color: rgb(216, 13, 54);
+                color: rgb(250, 245, 250);
+                font-size: 20px;
+                border-radius: 10px;
+                border: 2px solid transparent;
+            }
+            .at button:hover{
+                background-color:transparent;
+                font-size: 20px;
+                border-radius: 10px;
+                border: 2px solid red;
+            } */
+      .abt {
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .skill {
+        background-color: rgb(11, 11, 11);
+        height: 120vh;
+        width: 100%;
+      }
+      .skill h2 {
+        text-align: center;
+        font-size: 50px;
+        padding-top: 50px;
+        color: aliceblue;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        font-family: "Cedarville Cursive", cursive;
+      }
+      .skill span {
+        color: red;
+        font-family: "Cedarville Cursive", cursive;
+        font-style: unset;
+      }
+      .s {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+      }
+      .s1 {
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: rgb(37, 36, 36);
+        color: rgb(82, 9, 238);
+        border-radius: 20px;
+        margin: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .s2 {
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: rgb(37, 36, 36);
+        color: rgb(82, 9, 238);
+        border-radius: 20px;
+        margin: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .s3 {
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: rgb(37, 36, 36);
+        color: rgb(82, 9, 238);
+        border-radius: 20px;
+        margin: 30px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .s4 {
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: rgb(37, 36, 36);
+        color: rgb(82, 9, 238);
+        border-radius: 20px;
+        margin: 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .s1 h5,
+      .s2 h5,
+      .s3 h5,
+      .s4 h5 {
+        font-size: 40px;
+        padding-top: 10px;
+        margin: 10px 0px;
+        color: rgb(18, 31, 150);
+
+        text-shadow: 1.5px 0px 0px rgb(239, 237, 237),
+          /* Right shadow */ -1.5px 0px 0px rgb(254, 243, 243),
+          /* Left shadow */ 0px 1.5px 0px rgb(236, 233, 233),
+          /* Bottom shadow */ 0px -1.5px 0px rgb(247, 252, 247); /* Top shadow */
+        /* color: rgb(67, 26, 252); */
+      }
+      .s1 p,
+      .s2 p,
+      .s3 p,
+      .s4 p {
+        font-size: 20px;
+        color: rgb(255, 219, 12);
+        margin-bottom: 25px;
+        line-height: 27px;
+      }
+      .s3 i {
+        font-size: 40px;
+        display: block;
+        text-align: center;
+        margin: 10px 0px;
+        color: brown;
+      }
+      .s1 img {
+        display: block;
+        padding-left: 89px;
+        align-content: center;
+        text-align: center;
+        margin: 10px 0px;
+      }
+      .s2 img {
+        height: 50px;
+        width: 50px;
+        display: block;
+        padding-left: 100px;
+        align-content: center;
+        text-align: center;
+        margin: 10px 0px;
+      }
+      .s4 img {
+        height: 65px;
+        width: 65px;
+        display: block;
+        padding-left: 100px;
+        align-content: center;
+        text-align: center;
+        margin: 10px 0px;
+      }
+      .s1 a,
+      .s2 a,
+      .s3 a,
+      .s4 a {
+        font-size: 20px;
+        color: rgb(237, 237, 239);
+        text-decoration: none;
+        border: 2px solid blue;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 15px;
+        transition: 0.5s;
+        padding: 2.5%;
+      }
+      .s1 a:hover,
+      .s2 a:hover,
+      .s3 a:hover,
+      .s4 a:hover {
+        font-size: 20px;
+        color: rgb(7, 7, 244);
+        text-decoration: none;
+        border: 4px solid transparent;
+        background-color: rgb(242, 242, 246);
+        font-weight: bold;
+        border-radius: 15px;
+        transition: 0.5s;
+      }
+      .cm {
+        background-color: black;
+      }
+      .cm h3 {
+        text-align: center;
+        font-size: 45px;
+        color: rgb(228, 236, 120);
+        padding-top: 100px;
+        font-family: cursive;
+        
+      }
+      .cm p {
+        padding-left: 45%;
+        color: aliceblue;
+      }
+      .cm button {
+        font-size: 20px;
+        border-radius: 10px;
+        border-color: rgb(243, 54, 243);
+        color: rgb(253, 249, 253);
+        background-color: transparent;
+        padding: 2%;
+        text-decoration: none;
+      }
+      .cm button:hover {
+        font-size: 20px;
+        border-radius: 10px;
+        border-color: rgb(243, 54, 243);
+        color: white;
+        background-color: rgb(243, 54, 243);
+        text-decoration: none;
+      }
+      .cm a{
+        color: rgb(90, 8, 242);
+        text-decoration: none;
+      }
+      .cm a:hover{
+        color: white;
+        text-decoration: none;
+      }
+      .cm1 {
+        color: aliceblue;
+        font-size: 40px;
+        justify-content: space-between;
+      }
+      .cm1 a {
+        padding-left: 25px;
+        text-decoration: none;
+      }
+    </style>
+    <link rel="stylesheet" href="css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body alink="white" vlink="blueviolet" link="red">
+    <div class="ab">
+      <nav>
+        <h1 align="250px">
+          <b>PORTFO<span>LIO</span></b>
+        </h1>
+        <ul class="A" type="null">
+          <li><a href="#">Home</a></li>
+          <li><a href="#att">Portfolio</a></li>
+          <li><a href="#ssk">Skills</a></li>
+          <li><a href="contact us.html" target="_blank">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h4>Hello! This is</h4>
+        <h2><span>Divya Kumar</span></h2>
+        <h3>Student of Indian Institute of&nbsp;Technology Bhubaneswar</h3>
+            <img class="jpg" src="./img6.jpg" >
+      </div>
+    </div>
+    <!-- <div class="skill"> -->
+    <section class="about" id="att">
+      <div class="abt">
+        <img src="divya.jpg" alt="#" />
+        <div class="at">
+          <h3>About Me</h3>
+          <p>
+            I am a Student of Indian Institute of Technology Bhubaneswar studying Mechanical Engineering Dual
+            Degree(Btech+Mtech).My native place is Kanpur,Uttar Pradesh.I am
+            part of two tech clubs of my college named WebnD(related to
+            develpment of Websites) and RISC(related to Development of Robots).I
+            can do to coding in various languages and can also make websites.
+          </p>
+          <!-- <button>Know More</button> -->
+        </div>
+      </div>
+    </section>
+    <div class="skill" id="ssk">
+      <div class="sk">
+        <h2>My <span class="a">Skills</span></h2>
+      </div>
+      <div class="s">
+        <div class="s1">
+          <img
+            src="https://webnd-iitbbs.org/images/logo.png"
+            alt="WebnD"
+            style="width: 60px"
+          />
+          <h5>Web Develpment</h5>
+          <p>
+            I am a beginner level front-end developer.I made some basic websites
+            like website of Payment Form,Portfolio etc.
+          </p>
+          <a href="https://github.com/Divyakumar6163/Divya" target="_blank"
+            >My Project</a
+          >
+        </div>
+        <div class="s2">
+          <img
+            src="https://avatars.githubusercontent.com/u/41673377?s=200&v=4"
+            alt="#"
+          />
+          <h5>Arduino Uno</h5>
+          <p>
+            I in a group of 3 people made an Arduino Uno based Video Game which
+            was displayed on the TFT dispaly and we can control that using
+            Acceelerometer Sensor.
+          </p>
+          <a
+            href="https://github.com/vivekiitbbs/IITBBS_GC_RS_731964AB"
+            target="_blank"
+            >My Project</a
+          >
+        </div>
+        <div class="s3">
+          <i class="fa fa-code"></i>
+          <h5>Coding</h5>
+          <p>
+            I used to do coding in my free time and try to improve my skills
+            more in coding part.Even I use to do participate in online coding
+            competions.Also I used to ask my Neuro(Coding Society) friends about
+            coding.
+          </p>
+          <a href="https://www.codechef.com/users/divya_kumar" target="_blank"
+            >My Project</a
+          >
+        </div>
+        <div class="s4">
+          <img
+            src="https://scontent.fmaa8-1.fna.fbcdn.net/v/t39.30808-6/301208312_746340796784082_4527982246223757348_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hAGQsZ62Ia0AX9ZXT0T&_nc_ht=scontent.fmaa8-1.fna&oh=00_AfAe57_gSiYIE3AkInLUqfcaLMOQPBMazN35gayqrkWUcQ&oe=645B7F2F"
+            alt="#"
+          />
+          <h5>Knocksoniacs</h5>
+          <p>
+            I used to do work on solidworks,which helps in making part of
+            vehicle in future.After doing SolidWorks I have Started Ansys.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/11VQottKYIPLN9yjc9fLKfiyIRdF7vcqj/view?usp=share_link"
+            target="_blank"
+            >My Project</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="cm" id="ct">
+      <h3>Wanna Help in Project!!</h3>
+      <p><button><a href="contact us.html" target="_blank">Contact Me</a></button></p>
+
+      <div class="cm1">
+        <a
+          href="https://www.instagram.com/divya_kumar_5161/"
+          class="fa fa-instagram"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/divya-kumar-87a845265/"
+          class="fa fa-linkedin"
+          target="_blank"
+        ></a>
+        <a
+          href="https://github.com/Divyakumar6163"
+          class="fa fa-github"
+          target="_blank"
+        ></a>
+        <!-- <a href="" class="fa-brands fa-discord"></a> -->
+        <a
+          href="https://www.facebook.com/profile.php?id=100021862485292"
+          class="fa fa-facebook"
+          target="_blank"
+        ></a>
+        <a href="mailto:divyakumar768800@gmail.com" target="_blank" class="fa fa-google"></a>
+      </div>
+    </div>
+  </body>
+</html>
